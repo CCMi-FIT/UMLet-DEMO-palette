@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>200</x>
+      <y>8</y>
+      <w>129</w>
+      <h>305</h>
+    </coordinates>
+    <panel_attributes>executor</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=3*textHeight()/4;
+
+setForegroundColor("light_gray");
+setWordWrap(true);
+setLineThickness(25);
+drawRectangle(0,0,width,height);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>16</x>
+      <y>112</y>
+      <w>88</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=()-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>88</x>
+      <y>96</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>revoke request</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=5*(height-textHeight())/8;
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+int padding=5;
+drawCircle((width)/2,(height)/2,width/2-padding);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>48</x>
+      <y>8</y>
+      <w>121</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>Initiator</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=3*textHeight()/4;
+
+setForegroundColor("light_gray");
+setWordWrap(true);
+setLineThickness(25);
+drawRectangle(0,0,width,height);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>240</x>
+      <y>32</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>allow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=height/2+5;
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>240</x>
+      <y>208</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>reuse</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=height/2+5;
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>128</x>
+      <y>72</y>
+      <w>152</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;60.0;170.0;60.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>128</x>
+      <y>112</y>
+      <w>152</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0;170.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>40</x>
+      <y>336</y>
+      <w>129</w>
+      <h>297</h>
+    </coordinates>
+    <panel_attributes>initiator</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=3*textHeight()/4;
+
+setForegroundColor("light_gray");
+setWordWrap(true);
+setLineThickness(25);
+drawRectangle(0,0,width,height);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>80</x>
+      <y>360</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>quit</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=height/2+5;
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>48</y>
+      <w>248</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>lt=..&gt;</panel_attributes>
+    <additional_attributes>210.0;10.0;290.0;10.0;290.0;360.0;80.0;360.0;80.0;420.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>80</x>
+      <y>504</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>request</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=(height/2+5);
+setLineThickness(4);
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>520</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=()-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>200</x>
+      <y>360</y>
+      <w>137</w>
+      <h>409</h>
+    </coordinates>
+    <panel_attributes>executor</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=3*textHeight()/4;
+
+setForegroundColor("light_gray");
+setWordWrap(true);
+setLineThickness(25);
+drawRectangle(0,0,width,height);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>96</x>
+      <y>400</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>180.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>96</x>
+      <y>432</y>
+      <w>160</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>240</x>
+      <y>560</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>promise</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=(height/2+5);
+setLineThickness(4);
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>520</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0;180.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>448</y>
+      <w>160</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;100.0;180.0;100.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>240</x>
+      <y>648</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>promise</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=(height/2+5);
+setBackgroundColor("gray");
+setLineThickness(3);
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+setBackgroundColor("light_gray");
+Polygon g = new Polygon();
+g.addPoint(width/2,0);
+g.addPoint(width,height/2);
+g.addPoint(width/2,height);
+g.addPoint(0,height/2);
+drawPolygon(g);</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>600</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>240</x>
+      <y>408</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>decline</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=(height)/2;
+setWordWrap(true);
+drawRectangle(0,0,width,height);
+drawCircle(width/2,height/2,width/2);
+int padding=5;
+drawCircle((width)/2,(height)/2,width/2-padding);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+</diagram>

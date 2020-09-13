@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>248</x>
+      <y>136</y>
+      <w>72</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=().&gt;
+m1=ac
+</panel_attributes>
+    <additional_attributes>60.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>136</y>
+      <w>32</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=()-&gt;[]
+m1=rq
+m2=rq
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>16</y>
+      <w>32</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=()-&gt;[]
+m2=rq
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>8</x>
+      <y>112</y>
+      <w>417</w>
+      <h>137</h>
+    </coordinates>
+    <panel_attributes>Ai: executor Ti
+and initiator Tj
+
+layer=-99</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=0;
+
+
+setLineThickness(2);
+setForegroundColor("gray");
+drawLineHorizontal(0);
+
+for(String textline : textlines) {
+	y += printLeft(textline,height/2+y);
+}
+
+drawLineHorizontal(height);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>8</x>
+      <y>8</y>
+      <w>417</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>?:initiator Ti
+layer=-99</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=0;
+
+
+setLineThickness(2);
+setForegroundColor("gray");
+drawLineHorizontal(0);
+
+for(String textline : textlines) {
+	y += printLeft(textline,height/2+y);
+}
+
+drawLineHorizontal(height);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>8</x>
+      <y>248</y>
+      <w>417</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Aj: executor Tj
+layer=-99</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=0;
+
+
+setLineThickness(2);
+setForegroundColor("gray");
+drawLineHorizontal(0);
+
+for(String textline : textlines) {
+	y += printLeft(textline,height/2+y);
+}
+
+drawLineHorizontal(height);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>72</x>
+      <y>56</y>
+      <w>337</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>Ti
+&lt; transaction kind name &gt;
+bg=white
+</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+int lessHeight=height-textHeight()*2;
+
+drawRectangleRound(0,textHeight()*2,width,lessHeight,width/4,lessHeight);
+
+printCenter(textlines.get(0),height/2+textHeight());
+printCenter(textlines.get(1),textHeight());
+
+setForegroundColor("red");
+Polygon p = new Polygon();
+// right line
+drawLine(width/2+textHeight(),textHeight()*2,width/2+60,lessHeight/2+textHeight()*2);
+drawLine(width/2+60,lessHeight/2+textHeight()*2,width/2+textHeight(),lessHeight+textHeight()*2);
+// left line
+drawLine(width/2-textHeight(),textHeight()*2,width/2-60,lessHeight/2+textHeight()*2);
+drawLine(width/2-60,lessHeight/2+textHeight()*2,width/2-textHeight(),lessHeight+textHeight()*2);
+
+setForegroundColor("black");
+setBackgroundColor("gray");
+int smallRectangle = 16;
+drawRectangle(width/2+textHeight()-smallRectangle/2,lessHeight+textHeight()*2-smallRectangle,smallRectangle,smallRectangle);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>104</x>
+      <y>192</y>
+      <w>289</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>Tj
+&lt;transaction kind name&gt;
+bg=white
+</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+int lessHeight=height-textHeight()*2;
+
+drawRectangleRound(0,textHeight()*2,width,lessHeight,width/4,lessHeight);
+
+printCenter(textlines.get(0),height/2+textHeight());
+printCenter(textlines.get(1),textHeight());
+
+setForegroundColor("red");
+Polygon p = new Polygon();
+// right line
+drawLine(width/2+textHeight(),textHeight()*2,width/2+60,lessHeight/2+textHeight()*2);
+drawLine(width/2+60,lessHeight/2+textHeight()*2,width/2+textHeight(),lessHeight+textHeight()*2);
+// left line
+drawLine(width/2-textHeight(),textHeight()*2,width/2-60,lessHeight/2+textHeight()*2);
+drawLine(width/2-60,lessHeight/2+textHeight()*2,width/2-textHeight(),lessHeight+textHeight()*2);
+
+setForegroundColor("black");
+setBackgroundColor("gray");
+int smallRectangle = 16;
+drawRectangle(width/2+textHeight()-smallRectangle/2,lessHeight+textHeight()*2-smallRectangle,smallRectangle,smallRectangle);</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>152</x>
+      <y>136</y>
+      <w>40</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=[]&lt;.()
+m1=pm
+m2=pm
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>

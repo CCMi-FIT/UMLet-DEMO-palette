@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>150</x>
+      <y>10</y>
+      <w>121</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>F1 Person
+--
+day of birth[DAY]</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=textHeight();
+int round=40;
+
+drawRectangleRound(0,0,width,height,round,round);
+
+setLineType(1);
+drawLine(0,3*textHeight()/2,width,3*textHeight()/2);
+
+for(int i=0;textlines.size() &gt;i;i++) {
+	if(i==0) {
+		y += printCenter(textlines.get(i),y);
+	} else if(i==1) {
+		y += textHeight();
+	} else {
+		y += printLeft(textlines.get(i),y);	
+	}
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>10</x>
+      <y>190</y>
+      <w>151</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),textHeight());
+
+int padding=textHeight()+5;
+
+drawRectangle(padding,padding,width-padding*2,height-padding*2);
+drawLine(width/2,padding,width/2,height-padding);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>110</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>110</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-()
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>110</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>10</x>
+      <y>260</y>
+      <w>151</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),textHeight());
+
+int padding=textHeight()+5;
+
+drawLine(padding,padding-4,width/2,padding-4);
+drawRectangle(padding,padding,width-padding*2,height-padding*2);
+drawLine(width/2,padding,width/2,height-padding);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>30</x>
+      <y>340</y>
+      <w>81</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Money:€
+R</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),textHeight());
+
+int padding=width/2;
+
+setWordWrap(true);
+
+drawCircle(width/2,height/2,padding);
+
+int y=height/2;
+
+printCenter(textlines.get(1),y);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>10</x>
+      <y>120</y>
+      <w>151</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),textHeight());
+
+int padding=textHeight()+5;
+
+drawRectangle(padding,padding,width-padding*2,height-padding*2);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>10</x>
+      <y>430</y>
+      <w>141</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),textHeight());
+
+int padding=textHeight()+5;
+int lessHeight=height-padding-padding;
+
+drawRectangle(padding,padding,width-padding*2,height-padding*2);
+Polygon g = new Polygon();
+g.addPoint(width/2,padding);
+g.addPoint(width/2+lessHeight,height/2);
+g.addPoint(width/2,height-padding);
+g.addPoint(width/2-lessHeight,height/2);
+drawPolygon(g);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>10</x>
+      <y>500</y>
+      <w>151</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),textHeight());
+
+int padding=textHeight()+5;
+int lessHeight=height-padding-padding;
+
+drawRectangle(padding,padding,width-padding*2,height-padding*2);
+
+int paddingX=width/6;
+Polygon g = new Polygon();
+g.addPoint(width/2-paddingX,padding);
+g.addPoint(width/2+lessHeight-paddingX,height/2);
+g.addPoint(width/2-paddingX,height-padding);
+g.addPoint(width/2-paddingX-lessHeight,height/2);
+drawPolygon(g);
+
+drawLine(width/2,padding,width/2,height-padding);
+
+paddingX=-width/6;
+g = new Polygon();
+g.addPoint(width/2-paddingX,padding);
+g.addPoint(width/2+lessHeight-paddingX,height/2);
+g.addPoint(width/2-paddingX,height-padding);
+g.addPoint(width/2-paddingX-lessHeight,height/2);
+drawPolygon(g);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>121</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt; &lt;object class name&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=textHeight();
+int round=40;
+
+drawRectangleRound(0,0,width,height,round,round);
+setWordWrap(true);
+
+for(String textline : textlines) {
+	y += printCenter(textline,(height)/2-textHeight());
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>180</x>
+      <y>270</y>
+      <w>81</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printCenter(textlines.get(0),height/2);
+
+int padding=0;
+int lessHeight=height/2;
+
+Polygon g = new Polygon();
+g.addPoint(width/2,padding);
+g.addPoint(width/2+lessHeight,height/2);
+g.addPoint(width/2,height-padding);
+g.addPoint(width/2-lessHeight,height/2);
+drawPolygon(g);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>180</x>
+      <y>370</y>
+      <w>71</w>
+      <h>61</h>
+    </coordinates>
+    <panel_attributes>&lt;fact kind id&gt;
+&lt;fact kind formulation&gt;</panel_attributes>
+    <additional_attributes/>
+    <custom_code>printRight(textlines.get(0),height/2);
+
+int padding=0;
+int lessHeight=height/2;
+
+Polygon g = new Polygon();
+g.addPoint(width/2,padding);
+g.addPoint(width/2+lessHeight,height/2);
+g.addPoint(width/2,height-padding);
+g.addPoint(width/2-lessHeight,height/2);
+drawPolygon(g);
+
+drawLine(width/2,0,width/2,height);
+
+int y=height;
+
+for(int i=1; i &lt; textlines.size(); i++) {
+	y += printCenter(textlines.get(i),y);
+}</custom_code>
+  </element>
+</diagram>
